@@ -1,8 +1,21 @@
-version: 0.0
+# replace destination line as shown above, save (Ctrl+O, Enter, Ctrl+X)
+
+nano scripts/install_dependencies.sh
+# replace "yum install tomcat -y" with "dnf install -y tomcat9", save
+
+nano scripts/start_server.sh
+# replace both "tomcat.service" with "tomcat9.service", save
+
+nano scripts/stop_server.sh
+# replace "tomcat.service" with "tomcat9.service", save
+
+git add appspec.yml scripts/
+git commit -m "Fix tomcat9 package name and paths for Amazon Linux 2023"
+git pushversion: 0.0
 os: linux
 files:
   - source: target/webapp.war
-    destination: /usr/share/tomcat/webapps/
+    destination: /usr/share/tomcat9/webapps/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
@@ -16,4 +29,3 @@ hooks:
     - location: scripts/stop_server.sh
       timeout: 300
       runas: root
-
