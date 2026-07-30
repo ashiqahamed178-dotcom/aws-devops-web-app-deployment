@@ -1,0 +1,39 @@
+nohup: ignoring input
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building aws-devops-web-app 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ aws-devops-web-app ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/ec2-user/aws-devops-web-app-deployment/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ aws-devops-web-app ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ aws-devops-web-app ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/ec2-user/aws-devops-web-app-deployment/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ aws-devops-web-app ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ aws-devops-web-app ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ aws-devops-web-app ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [aws-devops-web-app] in [/home/ec2-user/aws-devops-web-app-deployment/target/webapp]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/ec2-user/aws-devops-web-app-deployment/src/main/webapp]
+[INFO] Webapp assembled in [20 msecs]
+[INFO] Building war: /home/ec2-user/aws-devops-web-app-deployment/target/webapp.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.623 s
+[INFO] Finished at: 2026-07-30T13:10:10Z
+[INFO] Final Memory: 9M/23M
+[INFO] ------------------------------------------------------------------------
