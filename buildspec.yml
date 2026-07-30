@@ -15,9 +15,9 @@ phases:
       - mvn clean install -s settings.xml
   post_build:
     commands:
-      - echo Build completed on `date`
-      - echo Packaging artifacts...
-      - mvn package -s settings.xml
+    - echo Build completed on `date`
+    - echo Publishing artifact to CodeArtifact...
+    - mvn deploy -s settings.xml
 artifacts:
   files:
     - target/*.war
