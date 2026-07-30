@@ -19,4 +19,13 @@
         <finalName>webapp</finalName>
     </build>
 
+<distributionManagement>
+    <repository>
+        <id>nextwork-nextwork-devops-cicd</id>
+        <name>nextwork-nextwork-devops-cicd</name>
+        <url>https://nextwork-562691664521.d.codeartifact.eu-central-1.amazonaws.com/maven/nextwork-devops-cicd/</url>
+    </repository>
+</distributionManagement>
+
+
 </project>
